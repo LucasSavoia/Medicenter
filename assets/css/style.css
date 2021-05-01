@@ -1,10 +1,11 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 header {
-  height: 120px;
+  height: 90px;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #eee;
@@ -54,8 +55,100 @@ nav .active a {
 }
 
 section#banner {
+  display: flex;
+  justify-content: center;
+
   background-image: url(../images/img1.jpg);
   background-position: center;
   background-size: cover;
   height: 670px;
 }
+
+section#banner .container {
+  flex-direction: column;
+}
+
+.banner-head {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-head h1 {
+  color: #fff;
+  font-size: 70px;
+  max-width: 350px;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+}
+
+.banner-head h2 {
+  color: #eee;
+  font-size: 22px;
+  max-width: 350px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.banner-options {
+  display: flex;
+  height: 210px;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+  color: #fff;
+  flex: 1;
+  padding: 20px;
+}
+
+.banner1 {
+  background: #39aae1;
+}
+.banner2 {
+  background: #0079c7;
+}
+.banner3 {
+  background: #2b4c99;
+}
+
+.banner-title {
+  font-size: 20px;
+}
+
+.banner-description {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.banner3 .banner-title {
+  margin-bottom: 5px;
+}
+
+.banner3-description {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #0079c7;
+}
+
+.banner3-description p {
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.banner-options a {
+  text-decoration: none;
+  color: #0079c7;
+  font-weight: bold;
+  display: inline-block;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  align-self: center;
+}
+

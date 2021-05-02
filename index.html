@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script type="text/javascript">
+    window.onload = function() {
+        document.querySelector(".menu-mobile").addEventListener("click", function(){
+            if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                document.querySelector(".menu nav ul").style.display = 'none';
+            } else {
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        });
+    };
+</script>
+  
   <title>Medicenter</title>
 </head>
 <body>
@@ -16,11 +29,13 @@
       </div>
       <div class="menu">
         <nav>
+          <div class="menu-mobile">
+            <div class="mm-line"></div>
+            <div class="mm-line"></div>
+            <div class="mm-line"></div>
+          </div>
           <ul>
             <li class="active"><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
             <li><a href="">Home</a></li>
             <li><a href="">Home</a></li>
           </ul>
@@ -224,7 +239,29 @@
               <div class="widget-title-bar"></div>
             </div>
             <div class="widget-body">
-              ...
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, dolorum?</p>
+              <div class="ftr-contact flex">
+                <p>Medicenter Clinic</p>
+                <p>.</p>
+              </div>
+              <div class="ftr-contact flex">
+                <p>33 Farlane Street</p>
+                <p>+555 655 655</p>
+              </div>
+              <div class="ftr-contact flex">
+                <p>Kailor East</p>
+                <p>+555 655 655</p>
+              </div>
+              <div class="ftr-contact flex">
+                <p>VIC 2022, Australia</p>
+                <p><span>medicenter@gmail.com</span></p>
+              </div>
+              <div class="ftr-social">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-google-plus-square"></i>
+                <i class="fab fa-youtube-square"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -235,7 +272,27 @@
               <div class="widget-title-bar"></div>
             </div>
             <div class="widget-body">
-              ...
+              <div class="ftr-lts">
+                <i class="fas fa-arrow-right"></i>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.</p>
+                  <small>6 years ago</small>
+                </div>
+              </div>
+              <div class="ftr-lts">
+                <i class="fas fa-arrow-right"></i>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <small>6 years ago</small>
+                </div>
+              </div>
+              <div class="ftr-lts">
+                <i class="fas fa-arrow-right"></i>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae.</p>
+                  <small>6 years ago</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -246,7 +303,27 @@
               <div class="widget-title-bar"></div>
             </div>
             <div class="widget-body">
-              ...
+              <div class="ftr-lts">
+                <i class="fas fa-arrow-right"></i>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem saepe assumenda ipsum doloremque id?</p>
+                  <small>4 days ago</small>
+                </div>
+              </div>
+              <div class="ftr-lts">
+                <i class="fas fa-arrow-right"></i>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem saepe assumenda ipsum doloremque id?</p>
+                  <small>4 days ago</small>
+                </div>
+              </div>
+              <div class="ftr-lts">
+                <i class="fas fa-arrow-right"></i>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem saepe assumenda ipsum doloremque id?</p>
+                  <small>4 days ago</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
